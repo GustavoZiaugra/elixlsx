@@ -8,11 +8,7 @@ defmodule Elixlsx.Mixfile do
     [
       app: :elixlsx,
       version: @version,
-<<<<<<< HEAD
-      elixir: "~> 1.12",
-=======
-      elixir: "~> 1.16.0",
->>>>>>> bac4537 (Add devcontainer and also update depedencies/correct core warnings)
+      elixir: "~> 1.17.0",
       package: package(),
       description: "Elixlsx is a writer for the MS Excel OpenXML format (`.xlsx`).",
       build_embedded: Mix.env() == :prod,
@@ -28,18 +24,12 @@ defmodule Elixlsx.Mixfile do
 
   defp deps do
     [
-<<<<<<< HEAD
-      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:propcheck, "~> 1.4", only: [:dev, :test]},
-      {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
-      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
-=======
       {:ex_check, "~> 0.15.0", only: [:dev, :test]},
       {:triq, "~> 1.3.0", only: :test},
       {:credo, "~> 1.7.2", only: [:dev, :test]},
       {:ex_doc, ">= 0.31.0", only: [:dev], runtime: false},
       {:dialyxir, "~> 1.4.2", only: [:dev], runtime: false}
->>>>>>> bac4537 (Add devcontainer and also update depedencies/correct core warnings)
     ]
   end
 
